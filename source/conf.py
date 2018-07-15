@@ -152,8 +152,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Qiki', 'Qiki Documentation',
-     author, 'Qiki', 'One line description of project.',
+    (master_doc, 'Qiki', 'Qiki',
+     author, 'Qiki', 'Personal Knowledge Library.',
      'Miscellaneous'),
 ]
 
