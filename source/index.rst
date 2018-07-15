@@ -12,7 +12,7 @@ Welcome to Qiki's documentation!
 
 
 
-Indices and tables
+目录
 ==================
 
 * :ref:`genindex`
