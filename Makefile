@@ -5,7 +5,7 @@
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = Qiki
-SOURCEDIR     = source
+SOURCEDIR     = QikiSource
 BUILDDIR      = build
 
 # Put it first so that "make" without argument is like "make help".

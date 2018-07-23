@@ -7,10 +7,10 @@ import sys
 import fnmatch
 
 
-main_index_example_head_file_path = "./source/index.rst.example.head"
-main_index_example_tail_file_path = "./source/index.rst.example.tail"
-main_index_file_path = "./source/index.rst"
-rst_source_path = "./source"
+main_index_example_head_file_path = "./QikiSource/index.rst.example.head"
+main_index_example_tail_file_path = "./QikiSource/index.rst.example.tail"
+main_index_file_path = "./QikiSource/index.rst"
+rst_source_path = "./QikiSource"
 
 
 def commonLog(str):
@@ -25,7 +25,7 @@ def generate_indices_dir(dir_name):
 	output = ""
 	for root, dirnames, filenames in os.walk(full_path):
 		for filename in fnmatch.filter(filenames, '*.rst'):
-			path = "./" + os.path.relpath(os.path.join(root, filename), './source/').replace("\\","/")
+			path = "./" + os.path.relpath(os.path.join(root, filename), rst_source_path).replace("\\","/")
 			if(path.endswith(".rst")):
 				path = path[:-4]
 			commonLog("handle file: " + path)
